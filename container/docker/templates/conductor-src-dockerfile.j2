@@ -51,7 +51,7 @@ RUN (curl https://bootstrap.pypa.io/get-pip.py | python - --no-cache-dir ) && \
     {% if distro_version in ["wheezy", "precise", "trusty"] %}
     pip install --no-cache-dir -U pyopenssl ndg-httpsclient pyasn1 && \
     {% endif %}
-    (curl https://get.docker.com/builds/Linux/x86_64/docker-{{ docker_version }}.tgz \
+    (curl https://download.docker.com/linux/static/stable/x86_64/docker-{{ docker_version }}.tgz \
        | tar -zxC /usr/local/bin/ --strip-components=1 docker/docker )
 
 ADD LICENSE /licenses/LICENSE

@@ -8,4 +8,5 @@ requests>=2,<2.16
 ruamel.yaml>=0.15.34,<=0.15.51
 six>=1.10
 structlog[dev]>=16.1
+colorama>=0.3.7
 python-string-utils>=0.6.0
